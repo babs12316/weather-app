@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './RandomLocationWeather.css';
+import "./RandomLocationWeather.css";
 const RandomLocationWeather = () => {
   const [weather, setWeather] = useState([]);
   //Genrates & sets lat to random number between 0 to 90
@@ -22,16 +22,25 @@ const RandomLocationWeather = () => {
     const res = await fetch(url);
     const data = await res.json();
     setWeather(data.weather);
-    console.log("data is" + JSON.stringify(data.weather));
   };
   return (
     <div>
-      <button className="button" onClick={getWeather}>Display weather at Random Location!</button>
+      <button className="button" onClick={getWeather}>
+        Display weather at Random Location!
+      </button>
       {weather.map(randomWeather => (
         <div key="randomWeather.main" className="weather">
-        <div>Weather at latitude {lat} and longitude {long} is</div>
-        <div> Mainly <b>{randomWeather.main}</b></div>
-        <div> Description <b>{randomWeather.description}</b></div>
+          <div>
+            Weather at latitude {lat} and longitude {long} is
+          </div>
+          <div>
+            {" "}
+            Mainly <b>{randomWeather.main}</b>
+          </div>
+          <div>
+            {" "}
+            Description <b>{randomWeather.description}</b>
+          </div>
         </div>
       ))}
     </div>

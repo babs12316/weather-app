@@ -1,15 +1,12 @@
-import React from 'react';
-import './App.css';
-import RandomLocationWeather from './components/RandomLocationWeather/RandomLocationWeather';
-
+import React from "react";
+import "./App.css";
+import RandomLocationWeather from "./components/RandomLocationWeather/RandomLocationWeather";
 
 function App() {
-    return (
+  return (
     <div className="App">
       <RandomLocationWeather></RandomLocationWeather>
-
-
-   </div>
+    </div>
   );
 }
 
