@@ -1,3 +1,7 @@
+.cityWeather{
+    width:100%;
+    text-align: center;
+}
 .cityWeather input{
     margin-top: 100px;
     float:left;
@@ -11,7 +15,7 @@ button:hover{
     cursor: pointer;
 }
 
-p{
+.error{
     float:left;
     margin-top: 10px;
     color: #ff0000;
@@ -24,4 +28,11 @@ p{
     width:100%;
     text-align: center;
 
+}
+@media (min-width:992px) and (max-width:1782px){
+    .error,.weather{width: 1000px !important;}
+}
+
+@media (max-width:991px){
+    .cityWeather{display: grid;}
 }

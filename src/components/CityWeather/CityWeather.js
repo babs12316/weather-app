@@ -40,7 +40,7 @@ const CityWeather = () => {
           onChange={getCountry}
         ></input>
         <button onClick={getWeather}>Show Weather</button>
-        <p>City not found! Please enter new city.</p>
+        <div className="error">City not found! Please enter new city.</div>
       </div>
     );
   } else {
