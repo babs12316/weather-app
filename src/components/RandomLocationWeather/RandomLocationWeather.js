@@ -24,12 +24,12 @@ const RandomLocationWeather = () => {
     setWeather(data.weather);
   };
   return (
-    <div>
+    <div id="randomWeather">
       <button className="button" onClick={getWeather}>
         Display weather at Random Location!
-      </button>
-      {weather.map(randomWeather => (
-        <div key="randomWeather.main" className="weather">
+        </button>
+         {weather.map(randomWeather => (
+        <div key="randomWeather.main" className="randomWeather">
           <div>
             Weather at latitude {lat} and longitude {long} is
           </div>
@@ -43,6 +43,8 @@ const RandomLocationWeather = () => {
           </div>
         </div>
       ))}
+     
+
     </div>
   );
 };

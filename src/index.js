@@ -8,6 +8,7 @@ import CityWeather from "./components/CityWeather/CityWeather";
 
 const routing = (
   <Router>
+    <div>
     <ul>
       <li>
         <Link to="/">Random Weather</Link>
@@ -16,7 +17,6 @@ const routing = (
         <Link to="/city-weather">City Weather</Link>
       </li>
     </ul>
-    <div>
       <Route exact path="/" component={App} />
       <Route path="/city-weather" component={CityWeather} />
     </div>

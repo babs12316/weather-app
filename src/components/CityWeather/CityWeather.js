@@ -45,7 +45,8 @@ const CityWeather = () => {
     );
   } else {
     return (
-      <div className="cityWeather">
+      <div>
+          <div className="cityWeather">
         <input
           type="text"
           placeholder="Enter city name"
@@ -56,8 +57,8 @@ const CityWeather = () => {
           placeholder="Enter Country"
           onChange={getCountry}
         ></input>
-        <button onClick={getWeather}>Show Weather</button>
-
+        <button id="showButton" onClick={getWeather}>Show Weather</button>
+        </div>
         {cityWeather.map(cityWeather => (
           <div key="cityWeather.main" className="weather">
             <div>

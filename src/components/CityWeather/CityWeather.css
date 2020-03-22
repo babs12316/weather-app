@@ -1,17 +1,18 @@
 .cityWeather{
     width:100%;
     text-align: center;
+    
 }
 .cityWeather input{
     margin-top: 100px;
     float:left;
     margin-right: 20px;
 }
-button{
+.cityWeather button{
     float:left;
     margin-top: 100px;
 }
-button:hover{
+.cityWeather button:hover{
     cursor: pointer;
 }
 
@@ -29,6 +30,8 @@ button:hover{
     text-align: center;
 
 }
+
+
 @media (min-width:992px) and (max-width:1782px){
     .error,.weather{width: 1000px !important;}
 }
